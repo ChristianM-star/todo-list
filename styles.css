@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;margin-top: 5rem;
+    font-size: 20px;
+    color: whitesmoke;
+    max-width: 100%;
+    background-color: rgb(116, 146, 158);
+}
+
+.todo-grid, .todo-input-grid{
+    display: grid;
+    grid-template-columns: 200px 150px 100px;
+    column-gap: 10px;
+    row-gap: 10px;
+    align-items: center;
+    border-radius: 7px;
+    
+   
+}
+
+.todo-input-grid{
+    margin-bottom: 10px;
+    align-items: stretch;
+}
+
+.name-input{
+    font-size: 15px;
+    padding: 6px;
+text-align: justify;
+}
+
+.add-todo-button{
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+.delete-todo-button{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-radius: 5px;
+  
+}
+
+h1{
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container{
+   background-image: url(sunset-3726030_1280.jpg);
+    padding: 15px;
+    border-radius: 7px;
+box-shadow: 5px 5px 5px;
+margin: 2rem;
+
+}
+/* mobile media selector */
+
+@media(max-width:500px){
+   
+body{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    font-size: 20px;
+width: 100%;
+    
+}
+.todo-grid, .todo-input-grid{
+  display: block;
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap:20px;
+}
+
+.container{
+    width: 100%;
+    margin: 2rem;
+}
+
+.name-input{
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.due-date-input{
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    text-align: center;
+    padding: 12px;
+    width: 100%;
+}
+.add-todo-button{
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+}
+
+.delete-todo-button{
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 15px;
+    width: 100%;
+   
+}
+
+
+}
+/* tablet and above media selector */
+
+@media(min-width:700px){
+    .container{
+        width: 600px;
+        margin: 2rem;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        gap:3rem;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    body{
+        font-size: 1.5em;
+
+    }
+   
+    
+    .todo-grid, .todo-input-grid{
+        display: grid;
+        grid-template-columns: 200px 150px 100px;
+        column-gap: 15px;
+        row-gap: 15px;
+        align-items: center;
+        border-radius: 7px;
+        
+       
+    }
+    
+
+    .name-input{
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .due-date-input{
+        border-radius: 5px;
+        border: none;
+        font-size: 15px;
+        text-align: center;
+        padding: 12px;
+        width: 100%;
+    }
+    .add-todo-button{
+        border: none;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 15px;
+        width: 100%;
+    }
+    
+    .delete-todo-button{
+        border: none;
+        font-size: 15px;
+        border-radius: 5px;
+        padding: 15px;
+        width: 100%;
+       
+    }
+}
+
